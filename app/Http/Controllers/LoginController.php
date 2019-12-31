@@ -29,7 +29,6 @@ class LoginController extends Controller
 		$result = $client->Vb_Manto_Usuario($parametros);
 		$result = obj2array($result);
 		$noticias1=$result['Vb_Manto_UsuarioResult']['MyResultData'];
-		dd($noticias1);
 		$n1=count($noticias1);
 		for($i1=0; $i1<$n1-1; $i1++){
 		    $noticia1=$noticias1[$i1];
@@ -37,8 +36,7 @@ class LoginController extends Controller
 			$mensaje=$noticia1['FNMSG'];
 		}
 		if($error==="1" && $mensaje=="Acceso Concedido"){
-			dd("Acceso Concedido Vendedor");
-		}
+			return view('vendedor.home');		}
 		if($error==="15" && $mensaje=="Acceso Concedido"){
 			dd("Acceso Concedido Ventas Express");
 		}
