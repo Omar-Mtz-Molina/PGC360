@@ -20,3 +20,23 @@ Route::get('/', function () {
 });
 
 Route::post('ingresar', 'LoginController@ingresar');
+
+Route::get('home', 'LoginController@home')->name('home');
+
+Route::get('/inicio', function (){
+if (session()->has('tipo')) {
+    $tipo = session('tipo');
+	if($tipo==1){
+    	return view('vendedor.home');
+	}
+	if($tipo==15){
+    	return view('ventasexpress.home');
+	}
+}else{
+	return view('login.inicio');
+}
+
+});
+
+Route::get('logout', 'LoginController@logout');
+

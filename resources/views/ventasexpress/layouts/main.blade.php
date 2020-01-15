@@ -19,8 +19,8 @@
 <body class="fixed-left">
 	<div class="loader"></div>
 	<div id="wrapper">
-		@include('vendedor.layouts.partials.topbar')
-    	@include('vendedor.layouts.partials.sidebar')
+		@include('ventasexpress.layouts.partials.topbar')
+    	@include('ventasexpress.layouts.partials.sidebar')
     	<div ng-view></div>
 	</div>
 	<script>
@@ -47,6 +47,6 @@
 	<script src="{{ asset('js/angular-route.min.js') }}"></script>
 	<script src="{{ asset('js/loading-bar.js') }}"></script>
 	<!-- JS -->
-	<script src="{{ asset('js/vendedor/vendedor.js') }}"></script>
+	<script src="{{ asset('js/ventasexpress/ventasexpress.js') }}"></script>
 </body>
 </html>

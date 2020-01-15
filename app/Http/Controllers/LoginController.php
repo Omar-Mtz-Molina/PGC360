@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 use SoapClient;
+use Auth;
 
 class LoginController extends Controller
 {
@@ -36,13 +37,42 @@ class LoginController extends Controller
 			$mensaje=$noticia1['FNMSG'];
 		}
 		if($error==="1" && $mensaje=="Acceso Concedido"){
-			return view('vendedor.home');		}
+			session(['usuario' => $us]);
+			session(['tipo' => $error]);
+			session(['puesto' => 'V']);
+			return redirect()->route('home'); 		
+		}
 		if($error==="15" && $mensaje=="Acceso Concedido"){
-			dd("Acceso Concedido Ventas Express");
+			session(['usuario' => $us]);
+			session(['tipo' => $error]);
+			session(['puesto' => 'E']);
+			return redirect()->route('home'); 
 		}
 		else{
 			session()->flash('status_error', 'Usuario y/o contraseña incorrectos');
 			return redirect('/');
 		} 
+    }
+    
+    public function home(Request $request){
+    	if (session()->has('tipo')) {
+    		$tipo = session('tipo');
+    		if($tipo==1){
+		    	return view('vendedor.layouts.main');
+			}
+			if($tipo==15){
+		    	return view('ventasexpress.layouts.main');
+			}
+		}
+		else{
+			return view('login.index');
+		}
+    }
+
+    public function logout(){
+    	Auth::logout();
+		session()->flush();
+    	Cache::flush();
+    	return redirect('/');
     }
 }
