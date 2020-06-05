@@ -35,8 +35,11 @@ if (session()->has('tipo')) {
 }else{
 	return view('login.inicio');
 }
-
 });
 
+Route::get('getVendedor', 'VendedorController@getVendedor');
+
 Route::get('logout', 'LoginController@logout');
+
+Route::get('pedido', 'PedidosController@index');
 

@@ -7,12 +7,12 @@
                             <li class="menu-title">Main</li>
 
                             <li>
-                                <a href="index.html" class="waves-effect waves-primary">
-                                    <i class="ti-home"></i><span> Dashboard </span>
+                                <a href="{{url('/home')}}" class="waves-effect waves-primary">
+                                    <i class="ti-home"></i><span> Inicio </span>
                                 </a>
                             </li>
 
-                            <li class="has_sub">
+                            <!-- <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect waves-primary">
                                     <i class="ti-shine"></i><span> Apps </span> 
                                     <span class="badge badge-pink pull-right">New</span> 
@@ -25,21 +25,21 @@
                                     <li><a href="apps-calendar.html">Calendar</a></li>
                                     <li><a href="apps-team.html">Team Members</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
 
                             <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect waves-primary">
-                                    <i class="ti-email"></i><span> Mail </span> 
+                                    <i class="ti-wallet"></i><span> Facturación </span> 
                                     <span class="menu-arrow"></span>
                                 </a>
                                 <ul class="list-unstyled">
-                                    <li><a href="mail-inbox.html">Inbox</a></li>
-                                    <li><a href="mail-compose.html">Compose Mail</a></li>
-                                    <li><a href="mail-read.html">View Mail</a></li>
+                                    <li><a href="{{ url('#!/pedido') }}">Crear Pedido</a></li>
+                                    <li><a href="mail-compose.html">Historial de Pedidos</a></li>
+                                    <li><a href="mail-read.html">Crear pedido CSV</a></li>
                                 </ul>
                             </li>
 
-                            <li class="has_sub">
+                            <!-- <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect waves-primary">
                                     <i class="ti-paint-bucket"></i> <span> UI Kit </span>
                                     <span class="menu-arrow"></span>
@@ -55,15 +55,15 @@
                                     <li><a href="ui-notification.html">Notification</a></li>
                                     <li><a href="ui-bootstrap.html">BS Elements</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
 
-                            <li>
+                            <!-- <li>
                                 <a href="typography.html" class="waves-effect waves-primary">
                                     <i class="ti-infinite"></i><span> Typography </span>
                                 </a>
-                            </li>
+                            </li> -->
 
-                            <li class="has_sub">
+                            <!-- <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect waves-primary">
                                     <i class="ti-light-bulb"></i><span> Components </span> 
                                     <span class="menu-arrow"></span> 
@@ -76,9 +76,9 @@
                                     <li><a href="components-range-sliders.html">Range Sliders </a></li>
                                     <li><a href="components-sweet-alert.html">Sweet Alerts </a></li>
                                 </ul>
-                            </li>
+                            </li> -->
 
-                            <li class="has_sub">
+                            <!-- <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect waves-primary">
                                     <i class="ti-pencil-alt"></i><span> Forms </span> 
                                     <span class="menu-arrow"></span>
@@ -93,11 +93,11 @@
                                     <li><a href="form-uploads.html">Multiple File Upload</a></li>
                                     <li><a href="form-xeditable.html">X-editable</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
 
-                            <li class="menu-title">More</li>
+                            <!-- <li class="menu-title">More</li> -->
 
-                            <li class="has_sub">
+                            <!-- <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect waves-primary">
                                     <i class="ti-menu-alt"></i><span> Tables </span> 
                                     <span class="menu-arrow"></span>
@@ -110,9 +110,9 @@
                                     <li><a href="tables-tablesaw.html">Tablesaw Table</a></li>
                                     <li><a href="tables-foo-tables.html">Foo Table</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
 
-                            <li class="has_sub">
+                            <!-- <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect waves-primary">
                                     <i class="ti-stats-up"></i><span> Charts </span> 
                                     <span class="badge badge-primary pull-right">8</span> 
@@ -127,9 +127,9 @@
                                     <li><a href="chart-sparkline.html">Sparkline Charts</a></li>
                                     <li><a href="chart-other.html">Other Chart</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
 
-                            <li class="has_sub">
+                            <!-- <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect waves-primary">
                                     <i class="ti-map"></i><span> Maps </span>
                                     <span class="menu-arrow"></span>
@@ -139,9 +139,9 @@
                                     <li><a href="map-vector.html"> Vector Maps</a></li>
                                     <li><a href="map-mapael.html"> Mapael Maps</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
 
-                            <li class="has_sub">
+                            <!-- <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect waves-primary">
                                     <i class="ti-spray"></i> <span> Icons </span> 
                                     <span class="menu-arrow"></span> 
@@ -153,11 +153,11 @@
                                     <li><a href="icons-fontawesome.html">Font awesome</a></li>
                                     <li><a href="icons-weather.html">Weather Icons</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
 
-                            <li class="menu-title">Extras</li>
+                            <!-- <li class="menu-title">Extras</li> -->
 
-                            <li class="has_sub">
+                            <!-- <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect waves-primary">
                                     <i class="ti-files"></i><span> Pages </span> 
                                     <span class="menu-arrow"></span>
@@ -172,9 +172,9 @@
                                     <li><a href="pages-404.html">404 Error</a></li>
                                     <li><a href="pages-500.html">500 Error</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
 
-                            <li class="has_sub">
+                            <!-- <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect waves-primary">
                                     <i class="ti-gift"></i><span> Extras </span> 
                                     <span class="badge badge-success pull-right">10</span>
@@ -191,8 +191,8 @@
                                     <li><a href="extras-faq.html">FAQ</a></li>
                                     <li><a href="extras-treeview.html">Treeview</a></li>
                                 </ul>
-                            </li>
-                            <li class="has_sub">
+                            </li> -->
+                            <!-- <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect">
                                     <i class="ti-share"></i><span>Multi Level </span> 
                                     <span class="menu-arrow"></span>
@@ -210,7 +210,7 @@
                                         <a href="javascript:void(0);"><span>Menu Level 1.2</span></a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> -->
                         </ul>
 
 

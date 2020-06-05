@@ -10,7 +10,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="page-title-box">
-                                    <h4 class="page-title">Welcome Vendedor!</h4>
+                                    <h4 class="page-title">Bienvenido! @{{vendedor.NAME1}} @{{vendedor.NAME2}} @{{vendedor.NAME3}} / @{{vendedor.EMAIL}} </h4>
                                     <ol class="breadcrumb float-right">
                                         <li class="breadcrumb-item"><a href="#">Minton</a></li>
                                         <li class="breadcrumb-item active">Dashboard</li>
@@ -21,7 +21,7 @@
                         </div>
 
 
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col-lg-6 col-xl-3">
                                 <div class="widget-bg-color-icon card-box">
                                     <div class="bg-icon bg-icon-success pull-left">
@@ -72,14 +72,14 @@
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- end row -->
 
 
                         <div class="row">
-                            <div class="col-lg-7">
+                            <div class="col-lg-5">
                         		<div class="card-box">
-                        			<h4 class="text-dark  header-title m-t-0 m-b-30">Total Revenue</h4>
+                        			<h4 class="text-dark  header-title m-t-0 m-b-30">ANÁLISIS VENTA X DIV.COMERCIAL</h4>
 
                         			<div class="widget-chart text-center">
                                         <div id="dashboard-chart-1" style="height: 300px;"></div>
@@ -89,9 +89,9 @@
 
                             </div>
 
-                            <div class="col-lg-5">
+                            <div class="col-lg-7">
                         		<div class="card-box">
-                        			<h4 class="text-dark  header-title m-t-0 m-b-30">Yearly Sales Report</h4>
+                        			<h4 class="text-dark  header-title m-t-0 m-b-30">Desempeño Comercial</h4>
 
                         			<div class="widget-chart text-center">
                                         <div id="morris-donut-example" style="height: 300px;"></div>

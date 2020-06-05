@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
@@ -70,9 +69,9 @@ class LoginController extends Controller
     }
 
     public function logout(){
-    	Auth::logout();
+		Auth::logout();
 		session()->flush();
-    	Cache::flush();
-    	return redirect('/');
+		Cache::flush();
+		return redirect('/');
     }
 }
